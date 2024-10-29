@@ -1,0 +1,37 @@
+# Ignore sensitive data and SSH keys
+*.pem
+*.key
+*.crt
+
+# Ignore Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# Ignore Ansible-generated files
+inventory.ini
+*.retry
+
+# Ignore Ansible roles and Galaxy dependencies
+roles/
+collections/
+
+# Ignore Python compiled files (if any Ansible roles use Python)
+__pycache__/
+*.py[cod]
+
+# Ignore local environment files
+.env
+*.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore logs and temporary files
+*.log
+*.bak
+*.swp
+
+# Ignore GitHub Actions workflows cache and generated files
+.github/workflows/*
